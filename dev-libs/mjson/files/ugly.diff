@@ -1,0 +1,17 @@
+diff --git a/rstring.c b/rstring.c
+index 3298fd1..d8140b3 100644
+--- a/rstring.c
++++ b/rstring.c
+@@ -362,11 +362,7 @@ rws_catwc (rwstring * pre, const wchar_t c)
+ rstring_code
+ rws_catc (rwstring * pre, const char c)
+ {
+-	wchar_t newc;
+-
+-	assert (pre != NULL);
+-	mbtowc (&newc, &c, 1);
+-	return rws_catwc (pre, newc);
++	return 0;
+ }
+ 
+ 
