@@ -27,6 +27,7 @@ src_prepare() {
 
 src_compile() {
 	tc-getCC
+	tc-getCXX
 	emake
 }
 
